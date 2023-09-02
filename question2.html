@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="stylesheet" href="mcq.css"> 
+		 <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;  
+                    if(count == 0){
+                        window.location.href = "./question3.html"
+                    }
+                }, 1000)
+            })
+        </script>
+	</head>
+	<body>
+	<h1>QUIZ WHIZ</h1>
+	<div class="timer" float="right">Time:<span id="timer">30</span><span> sec</span></div>
+	<center>
+		<div>
+		<h2>&nbsp;&nbsp;Question : 02</h2>
+		 <div id="timer-text">Time remaining: <span id="timer">30</span><span> sec</span></div>
+		<img src="two.jpg" alt="image" height="300"	>
+			<p>
+				Which team does he belong to ?<br>
+				<input type="radio" id="one">
+				<label for="one">Avengers</label><br>
+				<input type="radio" id="two">
+				<label for="two">X-men</label><br>
+				<input type="radio" id="three">
+				<label for="three">Guardians of the Galaxy</label><br>
+				<input type="radio" id="four">
+				<label for="four">DC</label>
+			</p>
+			<a href="question3.html"><button class="btn">Submit</button>
+			<a href="assignment1.html"><button class="btn">Back</button>
+		</div>
+		</center>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="stylesheet" href="mcq.css"> 
+		 <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;  
+                    if(count == 0){
+                        window.location.href = "./question9.html"
+                    }
+                }, 1000)
+            })
+        </script>
+	</head>
+	<body>
+	<h1>QUIZ WHIZ</h1>
+	<div class="timer" float="right">Time:<span id="timer">30</span><span> sec</span></div>
+	<center>
+		<div>
+		<h2>&nbsp;&nbsp;Question : 08</h2>
+		<img src="eight.jpg" alt="image"width="300">
+			<p>
+				Look out for Tom Holland in the role of...<br>
+				<input type="radio" id="one">
+				<label for="one">Superman</label><br>
+				<input type="radio" id="two">
+				<label for="two">Captain Marvel</label><br>
+				<input type="radio" id="three">
+				<label for="three">Spiderman</label><br>
+				<input type="radio" id="four">
+				<label for="four">E man</label>
+			</p>
+			<a href="question9.html"><button class="btn">Submit</button>
+			<a href="Question7.html"><button class="btn">Back</button>
+		</div>
+		</center>
+	</body>
+</html>

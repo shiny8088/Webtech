@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="stylesheet" href="mcq.css"> 
+		 <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;  
+                    if(count == 0){
+                        window.location.href = "./question16.html"
+                    }
+                }, 1000)
+            })
+        </script>
+	</head>
+	<body>
+	<h1>QUIZ WHIZ</h1>
+	<div class="timer" float="right">Time:<span id="timer">30</span><span> sec</span></div>
+	<center>
+		<div>
+		<h2>&nbsp;&nbsp;Question : 15</h2>
+		<img src="15.jpg" alt="image"width="300">
+			<p>
+				Who is this fearsome green man?<br>
+				<input type="radio" id="one">
+				<label for="one">Hulk</label><br>
+				<input type="radio" id="two">
+				<label for="two">Groot</label><br>
+				<input type="radio" id="three">
+				<label for="three">Shrek</label><br>
+				<input type="radio" id="four">
+				<label for="four">Thor</label>
+			</p>
+			<a href="question16.html"><button class="btn">Submit</button>
+			<a href="Question14.html"><button class="btn">Back</button>
+		</div>
+		</center>
+	</body>
+</html>

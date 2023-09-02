@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="stylesheet" href="mcq.css"> 
+		 <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;  
+                    if(count == 0){
+                        window.location.href = "./last.html"
+                    }
+                }, 1000)
+            })
+        </script>
+	</head>
+	<body>
+	<h1>QUIZ WHIZ</h1>
+	<div class="timer" float="right">Time:<span id="timer">30</span><span> sec</span></div>
+	<center>
+		<div>
+		<h2>&nbsp;&nbsp;Question : 20</h2>
+		<img src="20.jpg" alt="image">
+			<p>
+				What is the Iron Man's Most Famous line?<br>
+				<input type="radio" id="one">
+				<label for="one">I love you 3000</label><br>
+				<input type="radio" id="two">
+				<label for="two">Now they're But Humble tools for peace</label><br>
+				<input type="radio" id="three">
+				<label for="three">Eight years, Seven months, And six days</label><br>
+				<input type="radio" id="four">
+				<label for="four">I htough we were gonna fight side by side forever</label>
+			</p>
+			<a href="final.html"><button class="btn">Submit</button>
+			<a href="Question19.html"><button class="btn">Back</button>
+		</div>
+		</center>
+	</body>
+</html>

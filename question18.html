@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="stylesheet" href="mcq.css"> 
+		 <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;  
+                    if(count == 0){
+                        window.location.href = "./question19.html"
+                    }
+                }, 1000)
+            })
+        </script>
+	</head>
+	<body>
+	<h1>QUIZ WHIZ</h1>
+	<div class="timer" float="right">Time:<span id="timer">30</span><span> sec</span></div>
+	<center>
+		<div>
+		<h2>&nbsp;&nbsp;Question : 18</h2>
+		<img src="18.jpg" alt="image"height="300">
+			<p>
+				In "Avengers:Age of Ultron", What's the name of the robot army built by tony Stark?<br>
+				<input type="radio" id="one">
+				<label for="one">The Iron Men</label><br>
+				<input type="radio" id="two">
+				<label for="two">The Iron Legion</label><br>
+				<input type="radio" id="three">
+				<label for="three">The Iron Army</label><br>
+				<input type="radio" id="four">
+				<label for="four">The BTS Army</label>
+			</p>
+			<a href="question19.html"><button class="btn">Submit</button>
+			<a href="Question17.html"><button class="btn">Back</button>
+		</div>
+		</center>
+	</body>
+</html>

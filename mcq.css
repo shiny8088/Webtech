@@ -1,0 +1,40 @@
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(brown,black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align:center;
+}
+div{
+	border-color:#dab894;
+	background-color:#dab894;
+	width:35em;
+	padding:15px;
+	border-radius:50px;
+	}
+.timer{
+	border-color:voilet;
+	background-color:brown;
+	color:white;
+	width:5em;
+	padding:15px;
+	border-radius:50px;
+	font-size:25px;
+}
+.btn{
+	background-color:brown;
+	color:white;
+	text-align:center;
+	width:10em;
+	height:3em;
+	padding:15px 32px;
+}
+.first{
+	background-color:brown;
+	color:white;
+	text-align:center;
+	width:10em;
+	height:3em;
+	border-radius:50px;
+	padding:15 px 32px;
+}

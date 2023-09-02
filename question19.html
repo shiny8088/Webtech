@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="stylesheet" href="mcq.css"> 
+		 <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const timer = document.querySelector('#timer');
+                var count = 31;
+                window.setInterval(function(){
+                    count = count - 1;
+                    timer.innerHTML = count;  
+                    if(count == 0){
+                        window.location.href = "./question20.html"
+                    }
+                }, 1000)
+            })
+        </script>
+	</head>
+	<body>
+	<h1>QUIZ WHIZ</h1>
+	<div class="timer" float="right">Time:<span id="timer">30</span><span> sec</span></div>
+	<center>
+		<div>
+		<h2>&nbsp;&nbsp;Question : 19</h2>
+		<img src="19.jpg" alt="image"width="300">
+			<p>
+				In "Avengers: Infinity War", Thanos'4 warriors form:<br>
+				<input type="radio" id="one">
+				<label for="one">The Black order</label><br>
+				<input type="radio" id="two">
+				<label for="two">The Dark order</label><br>
+				<input type="radio" id="three">
+				<label for="three">The Order of chaos</label><br>
+				<input type="radio" id="four">
+				<label for="four">The Order of the phoenix</label>
+			</p>
+			<a href="question20.html"><button class="btn">Submit</button>
+			<a href="Question18.html"><button class="btn">Back</button>
+		</div>
+		</center>
+	</body>
+</html>
